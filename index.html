@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+    <div class="home">
+        <h3>HOME</h3>
+        <div class="score" id = "homeScore-el">0</div>
+        <button class="scored" onclick="add1Home()" id = "home1">+1</button>
+        <button class="scored" onclick="add2Home()" id = "home2">+2</button>
+        <button class="scored" onclick="add3Home()" id = "home3">+3</button>
+        <div>
+            <button class="resetScore" onclick="resetHome()">Reset</button>
+        </div>
+        <button class="possession" onclick="homesBall()">Home Ball</button>
+
+    </div>
+    <div class="gameStats">
+        <div>Period</div>
+        <div class="period" id="period-button-el">0</div>
+        <div class="poss"><h1>\Poss/</h1></div>
+        <div id="whosBall-el" class="possession"></div>
+        <button class="possession" onclick="period()">Period</button>
+    </div>
+
+
+    <div class="guest">
+        <h3>GUEST</h3>
+        <div class="score" id ="guestScore-el">0</div>
+        <button class="scored" onclick="add1Guest()" id = "guest1">+1</button>
+        <button class="scored" onclick="add2Guest()" id = "guest2">+2</button>
+        <button class="scored" onclick="add3Guest()" id = "guest3">+3</button>
+        <div>
+            <button class="resetScore" onclick="resetGuest()">Reset</button>
+        </div>
+        <button class="possession" onclick="guestsBall()">Guest Ball</button>
+    </div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
